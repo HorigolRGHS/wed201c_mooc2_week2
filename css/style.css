@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(157, 206, 255);
+}
+
+header {
+    background-color: rgb(172, 216, 255);
+    position: relative;
+}
+
+header::before {
+    content: "";
+    background-image: url('../images/siblings.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
+}
+
+
+
+h1 {
+    isolation: isolate;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(30, 30, 131);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+
+footer {
+    font-style: italic;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: rgb(171, 144, 250);
+    justify-content: center;
+    justify-items: left;
+}
+
+.grid-item {
+    border: 1px solid #010000;
+    background-color: rgb(209, 218, 218);
+    list-style-type: none;
+}
+
+li>a {
+    text-decoration: none;
+    isolation: isolate;
+    color: rgb(27, 244, 150);
+}
+
+#bacon {
+    isolation: isolate;
+    padding: 30px;
+    display: block;
+    margin: auto;
+}
+
+span {
+    float: right;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div>img {
+    width: 25%;
+}
+
+body>a {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(227, 222, 222);
+    padding: 20px;
+    background-color: rgb(54, 49, 49);
+}
+
+#current {
+    text-decoration: none;
+    isolation: isolate;
+    color: rgb(222, 206, 30);
+    background-color: rgb(21, 21, 201);
+}
